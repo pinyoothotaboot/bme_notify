@@ -1,0 +1,7 @@
+requests
+schedule
+asyncio
+lxml
+xlsxwriter
+xlrd
+xlwt
