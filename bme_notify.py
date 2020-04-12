@@ -18,6 +18,28 @@ import json
 from config import *
 
 _session = None
+CSI_URL = ""
+LINE_TOKEN = {}
+USERNAME = ""
+PASSWORD = ""
+SLEEP = 0
+SITE_NAME = ""
+
+def init():
+    global CSI_URL
+    global LINE_TOKEN
+    global USERNAME
+    global PASSWORD
+    global SLEEP
+    global SITE_NAME
+    with open("config.json") as f:
+        data = json.load(f)
+        CSI_URL = data['CSI_URL']
+        LINE_TOKEN = data['LINE_TOKEN']
+        USERNAME = data['USERNAME']
+        PASSWORD = data['PASSWORD']
+        SLEEP = data['SLEEP']
+        SITE_NAME = data['SITE_NAME']
 
 def reply(msg,token):
     HEADER = {'content-type':'application/x-www-form-urlencoded','Authorization':'Bearer '+ token}
@@ -320,6 +342,8 @@ def main():
 
 if __name__ == "__main__":
     try:
+        init()
+        print('[{}]- Start Service..'.format(SITE_NAME))
         main()
     except KeyboardInterrupt:
         print('[{}]- CQI Service stop!..'.format(SITE_NAME))
