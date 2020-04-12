@@ -1,0 +1,10 @@
+{
+    "CSI_URL": "https://docs.google.com/forms/d/e/1FAIpQLSfWwxjNE3ZSnbOm7jHZlKz65RhIDjUKHLR9OrGLgWe8EPSfYQ/viewform?usp=sf_link",
+    "LINE_TOKEN": {
+        "Department or Site": "Line notify token"
+    },
+    "USERNAME": "username",
+    "PASSWORD": "password",
+    "SLEEP": 30,
+    "SITE_NAME": "Site"
+}
