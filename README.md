@@ -1,5 +1,5 @@
-#How to use
-#1.	Install environment support 
+How to use
+1.	Install environment support 
 1.1	Install Python from https://www.python.org/downloads/ 
 -	Choose Python3 version 3.7 up to stable
 -	Check version : Open terminal  console and Enter “python --version”
@@ -7,7 +7,7 @@
 -	Check version : Open terminal console and Enter “pip --version”
 1.3	Install Libs from pip command 
 -	Open terminal console and Enter “pip install -r requirements.txt”
-#2.	Open filename “config.py” for edit data
+2.	Open filename “config.py” for edit data
 -	YEAR = now year
 -	CSI_URL = URL Link from CSI form
 -	LINE_TOKEN = 
@@ -16,5 +16,5 @@ o	Line Token = enter line notify token , we can create from https://medium.com/@
 -	USERNAME = Enter user to login N Smart
 -	PASSWORD = Enter password to login N Smart
 -	SITE_NAME = Enter name of Site BME ex. SSH
-#3.	Start process
+3.	Start process
 -	Open terminal console and enter “python bme_notify.py”
